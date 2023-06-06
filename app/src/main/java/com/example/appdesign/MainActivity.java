@@ -85,12 +85,16 @@ public class MainActivity extends AppCompatActivity {
 
                 //텍스트 클릭 시 view params 변경
                 params1.height = (int) getResources().getDimension(R.dimen.view_height_5dp);
+                params1.topMargin = (int)getResources().getDimension(R.dimen.view_topon);
                 view1.setLayoutParams(params1);
                 params2.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params2.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view2.setLayoutParams(params2);
                 params3.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params3.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view3.setLayoutParams(params3);
                 params4.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params4.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view4.setLayoutParams(params4);
             }
         });
@@ -110,12 +114,16 @@ public class MainActivity extends AppCompatActivity {
                 view4.setBackgroundColor(Color.parseColor("#CCCCCC"));
 
                 params1.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params1.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view1.setLayoutParams(params1);
                 params2.height = (int) getResources().getDimension(R.dimen.view_height_5dp);
+                params2.topMargin = (int)getResources().getDimension(R.dimen.view_topon);
                 view2.setLayoutParams(params2);
                 params3.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params3.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view3.setLayoutParams(params3);
                 params4.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params4.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view4.setLayoutParams(params4);
             }
         });
@@ -135,12 +143,16 @@ public class MainActivity extends AppCompatActivity {
                 view4.setBackgroundColor(Color.parseColor("#CCCCCC"));
 
                 params1.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params1.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view1.setLayoutParams(params1);
                 params2.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params2.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view2.setLayoutParams(params2);
                 params3.height = (int) getResources().getDimension(R.dimen.view_height_5dp);
+                params3.topMargin = (int)getResources().getDimension(R.dimen.view_topon);
                 view3.setLayoutParams(params3);
                 params4.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params4.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view4.setLayoutParams(params4);
             }
         });
@@ -160,12 +172,16 @@ public class MainActivity extends AppCompatActivity {
                 view4.setBackgroundColor(Color.parseColor("#87CEEB"));
 
                 params1.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params1.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view1.setLayoutParams(params1);
                 params2.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params2.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view2.setLayoutParams(params2);
                 params3.height = (int) getResources().getDimension(R.dimen.view_height_3dp);
+                params3.topMargin = (int)getResources().getDimension(R.dimen.view_topnull);
                 view3.setLayoutParams(params3);
                 params4.height = (int) getResources().getDimension(R.dimen.view_height_5dp);
+                params4.topMargin = (int)getResources().getDimension(R.dimen.view_topon);
                 view4.setLayoutParams(params4);
             }
         });

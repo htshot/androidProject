@@ -76,28 +76,32 @@
                 android:layout_height="5dp"
                 android:layout_columnWeight="1"
                 android:background="#87CEEB"
-                android:id="@+id/view1"/>
+                android:id="@+id/view1"
+                android:layout_marginTop="0dp"/>
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="3dp"
                 android:layout_columnWeight="1"
                 android:background="#CCCCCC"
-                android:id="@+id/view2"/>
+                android:id="@+id/view2"
+                android:layout_marginTop="2dp"/>
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="3dp"
                 android:layout_columnWeight="1"
                 android:background="#CCCCCC"
-                android:id="@+id/view3"/>
+                android:id="@+id/view3"
+                android:layout_marginTop="2dp"/>
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="3dp"
                 android:layout_columnWeight="1"
                 android:background="#CCCCCC"
-                android:id="@+id/view4"/>
+                android:id="@+id/view4"
+                android:layout_marginTop="2dp"/>
         </GridLayout>
 
         <GridLayout
@@ -150,55 +154,55 @@
                 />
         </GridLayout>
 
-        <GridLayout
-            android:layout_width="match_parent"
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:columnCount="4"
-            android:rowCount="1"
-            android:layout_marginTop="20dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="PT1"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
+            android:layout_columnWeight="1"
+            android:text="PT1"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="PT2"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="PT2"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="PT3"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="PT3"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="PT4"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="PT4"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
 
-        </GridLayout>
+    </GridLayout>
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -207,6 +211,7 @@
         android:columnCount="4"
         android:rowCount="1"
         android:layout_marginTop="20dp"
+        android:layout_gravity="center"
         >
 
         <Button
