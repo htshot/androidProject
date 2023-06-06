@@ -14,7 +14,9 @@
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@drawable/button_round" />
-
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

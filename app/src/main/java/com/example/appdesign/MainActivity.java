@@ -2,6 +2,7 @@ package com.example.appdesign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -282,10 +283,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Intent intent = new Intent(MainActivity.this,MainActivity2.class);
         mainmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // mainmenu 부분 코드 작성
+                startActivity(intent);
+                finish();
             }
         });
     }
