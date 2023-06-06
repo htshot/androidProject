@@ -25,12 +25,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 그래프 삽입시 layout 부분 imagebutton gridlayout부분에서 margintop 변경
+
         // !주의사항 (해당 파일에서 작업 할거면 상관 X)
         // drawable 부분 button_round.xml 파일 생성할 것 (element를 shape로 생성)
         // 생성했다면 Manifest 부분 14~16줄 meta-data 생성
         // values 부분 dimens.xml 생성할 것 (element를 resources로 생성)
-        // xml은 gridlayout 위주로 생성
-        // 실제 폰으로 안돌려봄 pixel2 api 32 에뮬 사용 비율 안맞을 시 문의 ㄱㄱ
+        // manifest.xml 에서 theme을 @style/Theme.AppCompat.NoActionBar로 변경
+
 
         //Hour,day,month,year Text id
         hour = findViewById(R.id.hour);
