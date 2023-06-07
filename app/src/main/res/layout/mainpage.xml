@@ -60,6 +60,7 @@
             android:layout_width="120dp"
             android:height="120dp"
             android:background="@drawable/mainbt_round"
+            android:drawable="@drawable/mokwon"
             android:text="전력 측정"
             android:textSize="20dp"
             android:textStyle="bold"
