@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -263,6 +264,7 @@ public class MainActivity extends AppCompatActivity {
                 imgbtn2.setImageResource(R.drawable.imgbutton);
                 imgbtn3.setImageResource(R.drawable.imgbutton);
                 imgbtn4.setImageResource(R.drawable.imgbutton);
+                Log.d("MyActivity", "allon 버튼이 클릭되었습니다.");
             }
         });
 
