@@ -325,9 +325,11 @@ public class MainActivity extends AppCompatActivity {
                 if (isimgbtn2) {
                     imgbtn2.setImageResource(R.drawable.imgbutton);
                     isimgbtn2 = false;
+                    sendBTCommand(COMMAND2_BTN_ON);
                 } else {
                     imgbtn2.setImageResource(R.drawable.imgbtn2);
                     isimgbtn2 = true;
+                    sendBTCommand(COMMAND2_BTN_OFF);
                 }
             }
         });
@@ -338,9 +340,11 @@ public class MainActivity extends AppCompatActivity {
                 if (isimgbtn3) {
                     imgbtn3.setImageResource(R.drawable.imgbutton);
                     isimgbtn3 = false;
+                    sendBTCommand(COMMAND3_BTN_ON);
                 } else {
                     imgbtn3.setImageResource(R.drawable.imgbtn2);
                     isimgbtn3 = true;
+                    sendBTCommand(COMMAND3_BTN_OFF);
                 }
             }
         });
@@ -351,9 +355,11 @@ public class MainActivity extends AppCompatActivity {
                 if (isimgbtn4) {
                     imgbtn4.setImageResource(R.drawable.imgbutton);
                     isimgbtn4 = false;
+                    sendBTCommand(COMMAND4_BTN_ON);
                 } else {
                     imgbtn4.setImageResource(R.drawable.imgbtn2);
                     isimgbtn4 = true;
+                    sendBTCommand(COMMAND4_BTN_OFF);
                 }
             }
         });
