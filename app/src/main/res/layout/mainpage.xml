@@ -48,7 +48,7 @@
         <Button
             android:layout_width="120dp"
             android:height="120dp"
-            android:background="@drawable/button_round"
+            android:background="@drawable/mainbt_round"
             android:text="멀티탭 제어"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -59,7 +59,7 @@
         <Button
             android:layout_width="120dp"
             android:height="120dp"
-            android:background="@drawable/button_round"
+            android:background="@drawable/mainbt_round"
             android:text="전력 측정"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -80,7 +80,7 @@
         <Button
             android:layout_width="120dp"
             android:height="120dp"
-            android:background="@drawable/button_round"
+            android:background="@drawable/mainbt_round"
             android:text="전원 예약"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -91,7 +91,7 @@
         <Button
             android:layout_width="120dp"
             android:height="120dp"
-            android:background="@drawable/button_round"
+            android:background="@drawable/mainbt_round"
             android:text="데이터 룸"
             android:textSize="20dp"
             android:textStyle="bold"
