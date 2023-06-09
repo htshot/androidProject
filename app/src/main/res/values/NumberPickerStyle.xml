@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NumberPicker 색상 변경 -->
+    <style name="Theme.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        ...
+    </style>
+
+    <style name="ThemeOverlay.NumberPicker" parent="Theme.AppTheme">
+        <!-- NumberPicker divider color -->
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+</resources>

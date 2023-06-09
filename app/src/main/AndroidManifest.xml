@@ -15,10 +15,16 @@
             android:name="com.google.android.actions"
             android:resource="@drawable/button_round" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".PopupActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".Reservation"
             android:exported="true"/>
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

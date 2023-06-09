@@ -17,6 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainpage);
 
+        //멀티탭 선택하기
         Spinner spinner = findViewById(R.id.spinner);
         if (spinner != null) {
             String[] str = getResources().getStringArray(R.array.spinnerArray);
@@ -39,12 +40,24 @@ public class MainActivity2 extends AppCompatActivity {
             });
         }
 
+        // on,off페이지로 이동
         Button btn1 = findViewById(R.id.btn1);
-        Intent intent = new Intent(MainActivity2.this,MainActivity.class);
+        Intent intent1 = new Intent(MainActivity2.this,MainActivity.class);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(intent);
+                startActivity(intent1);
+                finish();
+            }
+        });
+
+        // 예약으로 이동
+        Button btn3 = findViewById(R.id.btn3);
+        Intent intent3 = new Intent(MainActivity2.this,Reservation.class);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent3);
                 finish();
             }
         });
