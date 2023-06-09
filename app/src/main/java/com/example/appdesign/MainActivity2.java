@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 import java.lang.reflect.Array;
@@ -41,7 +42,7 @@ public class MainActivity2 extends AppCompatActivity {
         }
 
         // on,off페이지로 이동
-        Button btn1 = findViewById(R.id.btn1);
+        ImageButton btn1 = findViewById(R.id.btn1);
         Intent intent1 = new Intent(MainActivity2.this,MainActivity.class);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +53,7 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         // 예약으로 이동
-        Button btn3 = findViewById(R.id.btn3);
+        ImageButton btn3 = findViewById(R.id.btn3);
         Intent intent3 = new Intent(MainActivity2.this,Reservation.class);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
