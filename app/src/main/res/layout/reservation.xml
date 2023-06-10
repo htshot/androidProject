@@ -47,7 +47,8 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:visibility="gone"/>
+                android:visibility="gone"
+                android:backgroundTint="#000"/>
 
         </FrameLayout>
 
