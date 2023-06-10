@@ -79,8 +79,8 @@
                 android:layout_gravity="center"
                 android:text="전원 관리"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="17sp"
+                android:fontFamily="@font/notoblack" />
 
         </GridLayout>
 
@@ -111,8 +111,8 @@
                 android:layout_gravity="center"
                 android:text="전력 관리"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="17sp"
+                android:fontFamily="@font/notoblack" />
 
         </GridLayout>
     </GridLayout>
@@ -157,8 +157,8 @@
                 android:layout_gravity="center"
                 android:text="전원 예약"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="17sp"
+                android:fontFamily="@font/notoblack" />
 
         </GridLayout>
 
@@ -186,10 +186,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="데이터 룸"
-                android:textSize="20sp"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
-                android:textStyle="bold"/>
+                android:textSize="17sp"
+                android:fontFamily="@font/notoblack"/>
 
         </GridLayout>
     </GridLayout>
@@ -201,7 +201,7 @@
         android:background="@drawable/bottom_round"
         android:layout_weight="1"
         android:padding="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         >
 
         <ImageView
