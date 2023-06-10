@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#eeeeee"
     android:orientation="vertical"
-    android:layout_width="300dp"
+    android:layout_width="350dp"
     android:layout_height="wrap_content">
 
 
@@ -37,7 +37,8 @@
             android:id="@+id/numberPicker1"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:theme="@style/ThemeOverlay.NumberPicker" />
+            android:theme="@style/ThemeOverlay.NumberPicker"
+            android:layout_columnWeight="1"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,12 +46,14 @@
                 android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:textSize="17sp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:layout_columnWeight="1"/>
         <NumberPicker
             android:id="@+id/numberPicker2"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:theme="@style/ThemeOverlay.NumberPicker" />
+            android:theme="@style/ThemeOverlay.NumberPicker"
+            android:layout_columnWeight="1"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,12 +61,14 @@
                 android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:textSize="17sp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:layout_columnWeight="1"/>
         <NumberPicker
             android:id="@+id/numberPicker3"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:theme="@style/ThemeOverlay.NumberPicker" />
+            android:theme="@style/ThemeOverlay.NumberPicker"
+            android:layout_columnWeight="1"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -71,7 +76,8 @@
                 android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:textSize="17sp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:layout_columnWeight="1"/>
         </GridLayout>
     </LinearLayout>
 

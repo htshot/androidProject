@@ -66,8 +66,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="40dp">
 
         <LinearLayout
@@ -77,8 +77,8 @@
             android:background="@drawable/reserveall"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -91,30 +91,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:rowCount="1"
-                android:columnCount="2">
+                android:columnCount="3">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="All"
+                    android:text="All Tab"
                     android:textColor="@color/black"
                     android:layout_marginLeft="30dp"
                     android:textStyle="bold"
                     android:textSize="40px"
                     android:id="@+id/all_name"
+                    android:layout_gravity="left"
+                    android:layout_columnWeight="1"
                     />
+
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/timer"
                     android:layout_gravity="right"
                     android:id="@+id/edit_alltab"
-                    android:background="@android:color/transparent"/>
+                    android:background="@android:color/transparent"
+                    android:layout_columnWeight="1"/>
 
             </GridLayout>
 
@@ -191,7 +204,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="40dp">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -200,8 +213,8 @@
             android:background="#AABAF2"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -214,13 +227,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:rowCount="1"
-                android:columnCount="2">
+                android:columnCount="3">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -230,14 +244,24 @@
                     android:textStyle="bold"
                     android:textSize="40px"
                     android:id="@+id/tab1_name"
-                    />
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"/>
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/timer"
                     android:background="@android:color/transparent"
                     android:layout_gravity="right"
-                    android:id="@+id/tab1_edit"/>
+                    android:id="@+id/tab1_edit"
+                    android:layout_columnWeight="1"/>
 
             </GridLayout>
 
@@ -313,7 +337,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="40dp">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -322,8 +346,8 @@
             android:background="#AABAF2"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -336,13 +360,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:rowCount="1"
-                android:columnCount="2">
+                android:columnCount="3">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -352,14 +377,24 @@
                     android:textStyle="bold"
                     android:textSize="40px"
                     android:id="@+id/tab2_name"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"
                     />
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/timer"
                     android:background="@android:color/transparent"
                     android:layout_gravity="right"
-                    android:id="@+id/tab2_edit"/>
+                    android:id="@+id/tab2_edit"
+                    android:layout_columnWeight="1"/>
 
             </GridLayout>
 
@@ -434,7 +469,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="40dp">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -443,8 +478,8 @@
             android:background="#AABAF2"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -457,13 +492,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:rowCount="1"
-                android:columnCount="2">
+                android:columnCount="3">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -473,7 +509,16 @@
                     android:textStyle="bold"
                     android:textSize="40px"
                     android:id="@+id/tab3_name"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"
                     />
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -481,6 +526,7 @@
                     android:background="@android:color/transparent"
                     android:layout_gravity="right"
                     android:id="@+id/tab3_edit"
+                    android:layout_columnWeight="1"
                     />
 
             </GridLayout>
@@ -557,7 +603,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="40dp">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -566,8 +612,8 @@
             android:background="@drawable/reservend"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -580,13 +626,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:rowCount="1"
-                android:columnCount="2">
+                android:columnCount="3">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -596,14 +643,24 @@
                     android:textStyle="bold"
                     android:textSize="40px"
                     android:id="@+id/tab4_name"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"
                     />
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/timer"
                     android:background="@android:color/transparent"
                     android:layout_gravity="right"
-                    android:id="@+id/tab4_edit"/>
+                    android:id="@+id/tab4_edit"
+                    android:layout_columnWeight="1"/>
 
             </GridLayout>
 
