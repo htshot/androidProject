@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:rowCount="1"
+        android:columnCount="3"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow"
+            android:layout_columnWeight="1"
+            android:id="@+id/back_arrow"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="20">
+
+            <TextView
+                android:id="@+id/mult_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME 1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/multi_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="gone"
+                android:backgroundTint="#000"/>
+
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/pen"
+            android:background="@android:color/transparent"
+            android:id="@+id/edit_name"/>
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/reserveall"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/allbtn"
+                android:id="@+id/alltab_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:columnCount="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Tab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:id="@+id/all_name"
+                    android:layout_gravity="left"
+                    android:layout_columnWeight="1"
+                    />
+
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"
+                    android:layout_gravity="right"
+                    android:id="@+id/edit_alltab"
+                    android:background="@android:color/transparent"
+                    android:layout_columnWeight="1"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbg"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+                    android:layout_marginRight="18dp"
+                    />
+            </GridLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#AABAF2"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reservbtn"
+                android:id="@+id/tab1_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:columnCount="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power 1"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:id="@+id/tab1_name"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"/>
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right"
+                    android:id="@+id/tab1_edit"
+                    android:layout_columnWeight="1"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbg"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+                    android:layout_marginRight="18dp"
+                    />
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#AABAF2"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reservbtn"
+                android:id="@+id/tab2_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:columnCount="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power 2"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:id="@+id/tab2_name"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"
+                    />
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right"
+                    android:id="@+id/tab2_edit"
+                    android:layout_columnWeight="1"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbg"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+                    android:layout_marginRight="18dp"
+                    />
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#AABAF2"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reservbtn"
+                android:id="@+id/tab3_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:columnCount="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power 3"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:id="@+id/tab3_name"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"
+                    />
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right"
+                    android:id="@+id/tab3_edit"
+                    android:layout_columnWeight="1"
+                    />
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbg"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+                    android:layout_marginRight="18dp"
+                    />
+            </GridLayout>
+        </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/reservend"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reservbtn"
+                android:id="@+id/tab4_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:columnCount="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power 4"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:id="@+id/tab4_name"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="left"
+                    />
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_reservation" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right"
+                    android:id="@+id/tab4_edit"
+                    android:layout_columnWeight="1"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbg"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_gravity="center"
+
+                    android:textAlignment="center"
+                    android:textSize="35dp"
+                    android:layout_marginRight="18dp"
+                    />
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
