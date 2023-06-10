@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 import androidx.room.Room;
 
 import java.util.List;
@@ -20,6 +21,10 @@ public class Reservation extends AppCompatActivity {
     private UserDao mUserDao;
 
 
+=======
+
+public class Reservation extends AppCompatActivity {
+>>>>>>> 86cd18387f9b8406f5307c9033d2c2acaaef570c
     TextView multi_name,all_name,all_watch,tab1_name,tab1_watch,tab2_name,tab2_watch
             ,tab3_name,tab3_watch,tab4_name,tab4_watch;
     ImageButton back_arrow,edit_name,edit_alltab,tab1_edit,tab2_edit,tab3_edit,tab4_edit;
@@ -29,6 +34,7 @@ public class Reservation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reservation);
 
+<<<<<<< HEAD
         UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "app_db")
                 .fallbackToDestructiveMigration()       // 스키마 변경 가능
                 .allowMainThreadQueries()               // main thread에서 db에 io가능
@@ -45,6 +51,8 @@ public class Reservation extends AppCompatActivity {
             mUserDao.setInsertUser(user);
         }
 
+=======
+>>>>>>> 86cd18387f9b8406f5307c9033d2c2acaaef570c
         // 뒤로가기 버튼
         back_arrow = findViewById(R.id.back_arrow);
         Intent intent = new Intent(Reservation.this,MainActivity2.class);
@@ -60,11 +68,14 @@ public class Reservation extends AppCompatActivity {
         multi_name = findViewById(R.id.mult_name);
         multi_edit = findViewById(R.id.multi_edit);
 
+<<<<<<< HEAD
         for (int i = 0; i< userList.size(); i++){
             multi_name.setText(userList.get(i).getFirstName() + "");
         }
 
 
+=======
+>>>>>>> 86cd18387f9b8406f5307c9033d2c2acaaef570c
         // edit_name => 이름바꾸기 아이콘 누를시 textview => edittext로 변경
         edit_name.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,8 +90,11 @@ public class Reservation extends AppCompatActivity {
                     multi_edit.setVisibility(View.GONE);
                     multi_name.setText(multi_edit.getText());
                 }
+<<<<<<< HEAD
                 user.setFirstName(multi_name.getText() + "");
                 mUserDao.setInsertUser(user);
+=======
+>>>>>>> 86cd18387f9b8406f5307c9033d2c2acaaef570c
             }
         });
 
